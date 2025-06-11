@@ -11,7 +11,7 @@ dados = resposta.json()
 if resposta.status_code != 200:
     st.error(f"Erro na requisição: {dados.get('message', 'Erro desconhecido')}")
 else:
-    st.title("☁️ Previsão do Tempo - Fortaleza - CE")
+    st.title("☁️ Previsão do Tempo - Fortaleza(CE)")
     st.write(f"📍 Cidade: {dados['name']}")
     st.write(f"🌡️ Temperatura: {dados['main']['temp']}°C")
     st.write(f"☁️ Condição: {dados['weather'][0]['description']}")
